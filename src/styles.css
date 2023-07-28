@@ -54,10 +54,6 @@ body {
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
-section img {
-  display: flex;
-  border: 1px solid lightgray;
-}
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -119,6 +115,7 @@ footer p {
 
 footer ul {
   margin: 0;
+  color: black;
 }
 
 footer li {
@@ -127,17 +124,10 @@ footer li {
   padding: 0;
 }
 
-footer a {
-  color: lightgray;
-}
-
 section {
   margin: 0 auto;
   padding: 100px 0;
   max-width: 1200px;
-}
-section li {
-  color: wheat;
 }
 
 main {
@@ -150,62 +140,71 @@ main h2 {
   line-height: 1.5;
   letter-spacing: 5px;
   opacity: 0.3;
-  text-tr .card {
-    background: white;
-    margin: 30px 0;
-  }
+}
 
-  .card-body {
-    padding: 30px;
-  }
+.card {
+  margin: 30px 0;
+}
 
-  .card-footer {
-    padding: 0 30px 30px;
-  }
+.card-body {
+  padding: 30px;
+}
 
-  .btn {
-    display: block;
-    color: white;
-    font-weight: 700;
+.card-footer {
+  padding: 0 30px 30px;
+}
+.card img {
+  height: 270px;
+}
+
+.btn {
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: lightgrey;
+  text-decoration: none;
+  transform: uppercase;
+  border-radius: 5px;
+}
+footer a {
+  text-decoration: none;
+  color: lightgray;
+}
+
+@media (max-width: 960px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
     font-size: 14px;
-    line-height: 21px;
-    text-align: center;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    padding: 16px;
-    background-color: #462cb3;
-    text-decoration: none;
-    transform: uppercase;
   }
 
-  @media (max-width: 960px) {
-    header {
-      padding: 60px 0;
-    }
-    header h1 {
-      font-size: 48px;
-    }
-    header h2 {
-      font-size: 12px;
-    }
+  header h3 {
+    font-size: 12px;
+  }
 
-    header h3 {
-      font-size: 12px;
-    }
-    .grid {
-      grid-template-columns: 1fr;
-      padding: 20px;
-    }
-    section p {
-      font-size: 12px;
-    }
-    section img {
-      width: 400px;
-    }
-    section ul {
-      font-size: 12px;
-    }
-    grid grid-3-col{
-      
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  section p {
+    font-size: 12px;
+  }
+  section img {
+    width: 400px;
+  }
+  section ul {
+    font-size: 12px;
+  }
+  .btn {
+    font-size: 10px;
   }
 }
