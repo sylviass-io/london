@@ -19,6 +19,12 @@ body {
   margin: 0 auto;
 }
 
+.londoneye {
+  max-width: 600px;
+  border-radius: 5%;
+  filter: grayscale();
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -49,6 +55,7 @@ body {
 .img-responsive {
   max-width: 100%;
   display: block;
+  border-radius: 5%;
 }
 
 .grid-3-columns-with-first-narrow {
