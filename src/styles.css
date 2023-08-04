@@ -11,15 +11,16 @@ body {
   font-family: "Poppins";
   background-color: black;
   color: lightgrey;
+  overflow-x: hidden;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .londoneye {
-  max-width: 600px;
+  max-width: 100%;
 }
 
 .grid {
